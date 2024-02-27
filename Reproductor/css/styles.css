@@ -1,4 +1,72 @@
-body {
-    background-color: #0f7c97;
-    
+/*html {
+    box-sizing: border-box;
 }
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}*/
+
+/* GLOBALES */
+body {
+    background-image: linear-gradient(TO RIGHT, #30391F,#ACCC78,#668A4C);
+    font-family: 'Roboto', sans-serif;
+    width: 55%;
+	margin: 5px auto;
+	padding: 5px;
+	text-align: center;
+	
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+
+}
+h2{
+    
+    color: #30391f;
+}
+#song-author{
+    font-weight: bold;
+    color: #668A4C
+}
+.menu__enlaces{
+    text-align: center;
+    color: #ffffff;
+}
+.menu__link {
+        
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Reproductor{
+	border: 10px #30391F solid;
+	border-radius: 10px;
+	padding: 10px;
+	background: white;
+	opacity: 0.8
+}
+progress{
+    width: 60%;
+    background-color: #ACCC78;
+}
+button{
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: #ACCC78;
+}
+#player-volume{
+    scrollbar-color: #ACCC78;
+}
+

@@ -5,7 +5,7 @@ const btnRepeat = document.querySelector("#btn-repeat");
 const btnPrev = document.querySelector("#btn-prev");
 const btnNext = document.querySelector("#btn-next");
 const btnVolume = document.querySelector("#btn-volume");
-const btnVolumeIcon = document.querySelector("#btn-volume i");
+const btnVolumeIcon = document.querySelector("#btn-volume-i");
 const playerVolume = document.querySelector("#player-volume");
 const songName = document.querySelector("#song-name");
 const songAuthor = document.querySelector("#song-author");
@@ -19,30 +19,30 @@ let repeatSong = false;
 
 const songs = [ 
     {
-        name: "La Voz de tus Sentidos",
-        author: "Jannine Rada",
-        path: "./songs/La Voz de tus Sentidos - Jannine rada.mp3",
-    }
-    //   {
-    //     name: "Jazzy Abstract Beat",
-    //     author: "Coma Media",
-    //     path: "./assets/songs/Coma Media - Jazzy Abstract Beat.mp3",
-    //   },
-    //   {
-    //     name: "Sexy Fashion Beats",
-    //     author: "Coma Media",
-    //     path: "./assets/songs/Coma Media - Sexy Fashion Beats.mp3",
-    //   },
-    //   {
-    //     name: "Best Time",
-    //     author: "FASSounds",
-    //     path: "./assets/songs/FASSounds - Best Time.mp3",
-    //   },
-    //   {
-    //     name: "Guitar Electro Sport",
-    //     author: "Gvidon",
-    //     path: "./assets/songs/Gvidon - Guitar Electro Sport Trailer.mp3",
-    //   },
+        name: "Mentiras Piadosas",
+        author: "Alejandra Guzman",
+        path: "./songs/alejandra guzman - mentiras piadosas.mp3",
+    },
+    {
+        name: "Aprendiz (MTV)",
+        author: "Alejandro Sanz",
+        path: "./songs/Alejandro Sanz - Aprendiz (MTV).mp3",
+    },
+    {
+        name: "A Gritos De Esperanza",
+        author: "Alex Ubago",
+        path: "./songs/Alex Ubago - A Gritos De Esperanza.mp3",
+    },
+    {
+        name: "Que Pides Tu",
+        author: "Alex Ubago",
+        path: "./songs/Alex Ubago - Que Pides Tu.mp3",
+    },
+    {
+        name: "Between Love And Goodbye",
+        author: "Inertia Kiss",
+        path: "./songs/Inertia Kiss - Between Love And Goodbye.mp3",
+    },
 ];
 
 btnPlay.addEventListener("click", () => togglePlaySong());
