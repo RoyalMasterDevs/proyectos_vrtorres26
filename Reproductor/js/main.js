@@ -1,7 +1,7 @@
 
 const btnPlay = document.querySelector("#btn-play"); 
 const btnPlayIcon = document.querySelector("#btn-play-icon");
-const btnRepeat = document.querySelector("#btn-repeat");
+//const btnRepeat = document.querySelector("#btn-repeat");
 const btnPrev = document.querySelector("#btn-prev");
 const btnNext = document.querySelector("#btn-next");
 const btnVolume = document.querySelector("#btn-volume");
@@ -48,7 +48,7 @@ const songs = [
 btnPlay.addEventListener("click", () => togglePlaySong());
 btnPrev.addEventListener("click", () => changeSong(false));
 btnNext.addEventListener("click", () => changeSong());
-btnRepeat.addEventListener("click", () => toggleRepeatSong());
+//btnRepeat.addEventListener("click", () => toggleRepeatSong());
 playerVolume.addEventListener("input", () => changeVolume());
 playerProgress.addEventListener("input", () => changeTime());
 audioPlayer.addEventListener("timeupdate", () => timeUpdate());
@@ -86,10 +86,10 @@ const updatePlayer = () => {
     playerProgress.value = audioPlayer.currentTime;
 };
 
-const toggleRepeatSong = () => {
-    repeatSong = !repeatSong;
-    btnRepeat.classList.toggle("btn-activated");
-};
+// const toggleRepeatSong = () => {
+//     repeatSong = !repeatSong;
+//     btnRepeat.classList.toggle("btn-activated");
+// };
 
 const timeUpdate = () => {
     const { currentTime, duration } = audioPlayer;
